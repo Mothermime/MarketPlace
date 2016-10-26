@@ -8,14 +8,14 @@ namespace MarketPlace.Controllers
 {
     public class MarketsController : Controller
     {
-        private ApplicationDbContext _context;
+        private readonly ApplicationDbContext _context;
 
         public MarketsController()
         {
             _context = new ApplicationDbContext();
         }
 
-        //GET: Markets
+    
         public ActionResult Create()
         {
             var viewModel = new MarketFormViewModel()
@@ -28,12 +28,3 @@ namespace MarketPlace.Controllers
     }
 }
 
-//   
-//}
-
-
-
-//
-//{
-//    Categories = _context.Categories.ToList();
-//}
