@@ -7,13 +7,13 @@ namespace MarketPlace.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class PopulateTypeTable : IMigrationMetadata
+    public sealed partial class PopulateCategoriesTable : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(PopulateTypeTable));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(PopulateCategoriesTable));
         
         string IMigrationMetadata.Id
         {
-            get { return "201610252230217_PopulateTypeTable"; }
+            get { return "201610262041138_PopulateCategoriesTable"; }
         }
         
         string IMigrationMetadata.Source

@@ -9,7 +9,7 @@ namespace MarketPlace.Models
 
         [Required]
         public ApplicationUser MarketName { get; set; }
-
+        public string Organiser { get; set; }
         public DateTime DateTime { get; set; }
 
         [Required]
@@ -17,7 +17,7 @@ namespace MarketPlace.Models
         public string Venue { get; set; }
 
         [Required]
-        public Type Type { get; set; }
+        public Category Category { get; set; }
 
     }
 }

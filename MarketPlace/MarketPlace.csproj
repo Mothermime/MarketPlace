@@ -170,24 +170,17 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MarketsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201610242241239_InitialModel.cs" />
-    <Compile Include="Migrations\201610242241239_InitialModel.Designer.cs">
-      <DependentUpon>201610242241239_InitialModel.cs</DependentUpon>
+    <Compile Include="Migrations\201610262001393_Tryagain.cs" />
+    <Compile Include="Migrations\201610262001393_Tryagain.Designer.cs">
+      <DependentUpon>201610262001393_Tryagain.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201610242332279_CreateMarketTable.cs" />
-    <Compile Include="Migrations\201610242332279_CreateMarketTable.Designer.cs">
-      <DependentUpon>201610242332279_CreateMarketTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201610252214141_OverrideConventionsForMarketAndType.cs" />
-    <Compile Include="Migrations\201610252214141_OverrideConventionsForMarketAndType.Designer.cs">
-      <DependentUpon>201610252214141_OverrideConventionsForMarketAndType.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201610252230217_PopulateTypeTable.cs" />
-    <Compile Include="Migrations\201610252230217_PopulateTypeTable.Designer.cs">
-      <DependentUpon>201610252230217_PopulateTypeTable.cs</DependentUpon>
+    <Compile Include="Migrations\201610262041138_PopulateCategoriesTable.cs" />
+    <Compile Include="Migrations\201610262041138_PopulateCategoriesTable.Designer.cs">
+      <DependentUpon>201610262041138_PopulateCategoriesTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -195,9 +188,10 @@
     <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Market.cs" />
-    <Compile Include="Models\Type.cs" />
+    <Compile Include="Models\Category.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\MarketFormViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -229,7 +223,6 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
@@ -254,6 +247,8 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Markets\Create.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -262,22 +257,18 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="packages.config" />
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201610242241239_InitialModel.resx">
-      <DependentUpon>201610242241239_InitialModel.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201610262001393_Tryagain.resx">
+      <DependentUpon>201610262001393_Tryagain.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201610242332279_CreateMarketTable.resx">
-      <DependentUpon>201610242332279_CreateMarketTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201610252214141_OverrideConventionsForMarketAndType.resx">
-      <DependentUpon>201610252214141_OverrideConventionsForMarketAndType.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201610252230217_PopulateTypeTable.resx">
-      <DependentUpon>201610252230217_PopulateTypeTable.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201610262041138_PopulateCategoriesTable.resx">
+      <DependentUpon>201610262041138_PopulateCategoriesTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
