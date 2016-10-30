@@ -182,6 +182,14 @@
     <Compile Include="Migrations\201610262041138_PopulateCategoriesTable.Designer.cs">
       <DependentUpon>201610262041138_PopulateCategoriesTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201610262350369_ChangesToCreate.cs" />
+    <Compile Include="Migrations\201610262350369_ChangesToCreate.Designer.cs">
+      <DependentUpon>201610262350369_ChangesToCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610302135160_AddForeighKeyPropertiesToMarket.cs" />
+    <Compile Include="Migrations\201610302135160_AddForeighKeyPropertiesToMarket.Designer.cs">
+      <DependentUpon>201610302135160_AddForeighKeyPropertiesToMarket.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
@@ -269,6 +277,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201610262041138_PopulateCategoriesTable.resx">
       <DependentUpon>201610262041138_PopulateCategoriesTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610262350369_ChangesToCreate.resx">
+      <DependentUpon>201610262350369_ChangesToCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610302135160_AddForeighKeyPropertiesToMarket.resx">
+      <DependentUpon>201610302135160_AddForeighKeyPropertiesToMarket.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

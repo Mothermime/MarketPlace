@@ -7,17 +7,24 @@ namespace MarketPlace.Models
     {
         public int Id { get; set; }
 
+       
+        public ApplicationUser Organiser { get; set; }
         [Required]
-        public ApplicationUser MarketName { get; set; }
-        public string Organiser { get; set; }
+        public string OrganiserId { get; set; }
+
+        [Required]
+        [StringLength(255)]
+        public string  MarketName{ get; set; }
         public DateTime DateTime { get; set; }
 
         [Required]
         [StringLength(255)]
         public string Venue { get; set; }
 
-        [Required]
+       
         public Category Category { get; set; }
+        [Required]
+        public byte CategoryId { get; set; }
 
     }
 }
