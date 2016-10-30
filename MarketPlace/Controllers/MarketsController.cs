@@ -32,15 +32,12 @@ namespace MarketPlace.Controllers
         public ActionResult Create(MarketFormViewModel viewModel)
 
         {
-            //var organiserId = 
-            //var organiser = _context.Users.Single(u => u.Id == organiserId);
-            //var category = _context.Categories.Single(c => c.Id == viewModel.Category);
-
+           
             var market = new Market
             {
                 OrganiserId = User.Identity.GetUserId(),
-                DateTime = DateTime.Parse(string.Format("{0} {1}", viewModel.Date, viewModel.Time)),
                 CategoryId= viewModel.Category,
+                DateTime = viewModel.DateTime,
                 MarketName = viewModel.Name,
                 Venue = viewModel.Place
 
