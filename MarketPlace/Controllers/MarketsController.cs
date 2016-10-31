@@ -29,6 +29,7 @@ namespace MarketPlace.Controllers
         }
         [Authorize]
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Create(MarketFormViewModel viewModel)
 
         {
