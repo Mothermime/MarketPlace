@@ -22,6 +22,11 @@ select,
 textarea {
     max-width: 280px;
 }
+span.field-validation-error {
+    color: red;
+    font-weight: bold;
+    font-size: small;
+}
 /*Bootstrap Overrides*/
 .navbar-inverse {
     background-color: RGBA(251, 178, 31, 0.67);
@@ -34,11 +39,11 @@ textarea {
   
 .navbar-inverse .navbar-brand {
   color: #0f7dc3;
-}
+} 
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
-
-    background-color: #f9ba3b;
-    .dropdown-menu {
+        background-color: #f9ba3b;
+    }
+.dropdown-menu {
         box-shadow: none;
         -webkit-box-shadow: none;
     }
@@ -48,7 +53,8 @@ textarea {
    }
 .navbar-brand {
         font-weight: 800;
-}}
+}
+
 body {
 
     font-size: 18px;
