@@ -16,7 +16,7 @@ namespace MarketPlace.ViewModels
 
         [Required]
         [FutureDate]
-    public string Date { get; set; }
+        public string Date { get; set; }
 
         [Required]
         [ValidTime]
@@ -34,7 +34,7 @@ namespace MarketPlace.ViewModels
         {
             return DateTime.Parse(string.Format("{0} {1}", Date, Time));
         }
-    
 
-}
+
     }
+}
