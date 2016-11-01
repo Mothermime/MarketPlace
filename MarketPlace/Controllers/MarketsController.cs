@@ -47,7 +47,7 @@ namespace MarketPlace.Controllers
                 CategoryId= viewModel.Category,
                 DateTime = viewModel.GetDateTime(),
                 MarketName = viewModel.Name,
-                Venue = viewModel.Place
+                Venue = viewModel.Venue
 
             };
             _context.Markets.Add(market);

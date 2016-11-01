@@ -1,10 +1,8 @@
-﻿using System;
+﻿using MarketPlace.Models;
+using System;
 using System.Data.Entity;
-using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-using MarketPlace.Models;
 
 namespace MarketPlace.Controllers
 {
@@ -20,6 +18,9 @@ namespace MarketPlace.Controllers
         {
             var upcomingMarkets = _context.Markets
                 .Include(m => m.Organiser)
+                .Include(m => m.Category)
+               
+               
                 .Where(m => m.DateTime > DateTime.Now);
 
             return View(upcomingMarkets);

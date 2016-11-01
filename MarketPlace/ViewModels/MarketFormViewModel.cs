@@ -12,7 +12,7 @@ namespace MarketPlace.ViewModels
         public string Organiser { get; set; }
 
         [Required]
-        public string Place { get; set; }
+        public string Venue { get; set; }
 
         [Required]
         [FutureDate]
